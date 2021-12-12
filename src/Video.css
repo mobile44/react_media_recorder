@@ -1,0 +1,62 @@
+.title {
+  font-size: 3em;
+  padding-top:0%;
+  padding-bottom: 0%;
+  padding-left: 10px;
+  color: brown;
+  font-weight: bold;
+}
+.paragraph {
+  font-size: 1.5em;
+  color: rgb(32, 6, 105);
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+.button {
+  padding: 10px;
+}
+button {
+    background-color: #4CAF50; /* Green */
+    border-color:#4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px;
+  }
+  button:hover {
+    cursor:grab;
+    color:sandybrown;
+    border:azure;
+    border-color: aqua;
+  }
+  .status {
+    font-weight: bold;
+    font-style: italic;
+    color: darkviolet;
+    padding-left: 10px;
+  }
+  video {
+    display: block;
+    padding-left: 10px;
+  }
+  .btnEnable {
+    background-color: #4CAF50; /* Green */
+    border-color:#4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px;
+    pointer-events:initial;
+  }
+  .btnDisable {
+    background-color: lightgray;
+    border-color: lightgray;
+    pointer-events: none;
+  }
