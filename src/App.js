@@ -19,7 +19,7 @@ function App() {
       <div className="top">
         <span className="spanLeft">
         <nav>
-          <Link className="link" to="/">
+          <Link className="link" to="/home">
             Home
           </Link>
           <Link className="link" to="/about">
