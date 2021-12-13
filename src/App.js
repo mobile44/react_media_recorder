@@ -19,7 +19,7 @@ function App() {
       <div className="top">
         <span className="spanLeft">
         <nav>
-          <Link className="link" to="/home">
+          <Link className="link" to="/">
             Home
           </Link>
           <Link className="link" to="/about">
@@ -39,8 +39,8 @@ function App() {
         <div className="divBreak"/>
       </div>
       <Routes>
-        <Route path="/" element={<Home pageName="Home"/>}/>
-        <Route path="/home" element={<Home pageName="Home"/>}/>
+        <Route path="/" element={<Home pageName="Home"/>} />
+        <Route path="/react_media_recorder" element={<Home pageName="Home"/>} />
         <Route path="/about" element={<About pageName="About"/>} />
         <Route path="/video" element={<Video pageName="Video"/>} />
         <Route path="/audio" element={<Audio pageName="Audio"/>} />
