@@ -39,7 +39,7 @@ function App() {
         <div className="divBreak"/>
       </div>
       <Routes>
-        <Route path="/" exact element={<Home pageName="Home"/>}/>
+        <Route path="/react_media_recorder" element={<Home pageName="Home"/>}/>
         <Route path="/about" element={<About pageName="About"/>} />
         <Route path="/video" element={<Video pageName="Video"/>} />
         <Route path="/audio" element={<Audio pageName="Audio"/>} />
