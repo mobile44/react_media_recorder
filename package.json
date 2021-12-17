@@ -1,9 +1,11 @@
 {
   "name": "react_media_recorder",
-  "homepage" : "https://mobile44.github.io/react_media_recorder",
+  "homepage": "https://mobile44.github.io/react_media_recorder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "@tensorflow-models/coco-ssd": "^2.2.2",
     "@tensorflow/tfjs": "^3.12.0",
     "@testing-library/jest-dom": "^5.15.1",
@@ -13,7 +15,9 @@
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-loader-spinner": "^4.0.0",
     "react-media-recorder": "^1.6.2",
+    "react-promise-tracker": "^2.1.0",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "react-timer-hook": "^3.0.5",

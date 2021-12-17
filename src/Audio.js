@@ -49,16 +49,18 @@ function Audio(props) {
     btnStop = "btnEnable";
   }
   return (
-    <div className="pageContent">
+    <div className="main">
       <div className="title">{props.pageName}</div>
-      <div className="button">
-        <button className={btnStart} onClick={startedRec}>Start Recording</button>
-        <button className={btnStop} onClick={stoppedRec}>Stop Recording</button>
-        <button className={btnDownload} onClick={downloadRec}>Download Recording</button>
-      </div>
-      <div className="status">STATUS: {status}</div>
-      <div>
-        <audio src={mediaBlobUrl} controls autoPlay loop/>
+      <div className="pageContent">
+        <div className="button">
+          <button className={btnStart} onClick={startedRec}>Start Recording</button>
+          <button className={btnStop} onClick={stoppedRec}>Stop Recording</button>
+          <button className={btnDownload} onClick={downloadRec}>Download Recording</button>
+        </div>
+        <div className="status">STATUS: {status}</div>
+        <div>
+          <audio src={mediaBlobUrl} controls autoPlay loop/>
+        </div>
       </div>
     </div>
   );

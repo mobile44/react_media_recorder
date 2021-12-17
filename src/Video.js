@@ -50,16 +50,18 @@ function Video(props) {
   }
 
   return (
-    <div className="pageContent">
+    <div className="main">
       <div className="title">{props.pageName}</div>
-      <div className="button">
-        <button className={btnStart} onClick={startedRec}>Start Recording</button>
-        <button className={btnStop} onClick={stoppedRec}>Stop Recording</button>
-        <button className={btnDownload} onClick={downloadRec}>Download Recording</button>
-      </div>
-      <div className="status">STATUS: {status}</div>
-      <div>
-        <video width={320} height={240} src={mediaBlobUrl} controls autoPlay loop />
+      <div className="pageContent">
+        <div className="button">
+          <button className={btnStart} onClick={startedRec}>Start Recording</button>
+          <button className={btnStop} onClick={stoppedRec}>Stop Recording</button>
+          <button className={btnDownload} onClick={downloadRec}>Download Recording</button>
+        </div>
+        <div className="status">STATUS: {status}</div>
+        <div>
+          <video width={320} height={240} src={mediaBlobUrl} controls autoPlay loop />
+        </div>
       </div>
     </div>
   );

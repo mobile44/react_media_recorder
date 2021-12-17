@@ -1,15 +1,16 @@
+.main {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .title {
-  font-size: 3em;
+  font-size: 2.5em;
   padding-top:0%;
   padding-bottom: 0%;
-  padding-left: 10px;
   color: brown;
   font-weight: bold;
 }
-.paragraph {
+.pageContent {
   font-size: 1.5em;
   color: rgb(32, 6, 105);
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: justify;
 }

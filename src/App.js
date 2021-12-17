@@ -5,6 +5,7 @@ import Home from "./Home";
 import About from "./About";
 import Video from "./Video";
 import Audio from "./Audio";
+import ObjectDetection from "./ObjectDetection"
 import useRWD from "./useRWD";
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
           <Link className="link" to="/audio">
             Audio
           </Link>
+          <Link className="link" to="/objectdetection">
+            Object-Detection
+          </Link>
         </nav>
         </span>
         <span className="spanRight">
@@ -44,6 +48,7 @@ function App() {
         <Route path="/about" element={<About pageName="About"/>} />
         <Route path="/video" element={<Video pageName="Video"/>} />
         <Route path="/audio" element={<Audio pageName="Audio"/>} />
+        <Route path="/objectdetection" element={<ObjectDetection pageName="Object-Detection"/>} />
       </Routes>
     </Router>
   );
