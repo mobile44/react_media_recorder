@@ -80,15 +80,8 @@ function ObjectDetection(props) {
           ctx.strokeStyle = "#FF0000";
           ctx.lineWidth = 3;
           ctx.stroke();
-          //ctx.clearRect(0, 0, 1920, 1080);
-          //console.log("Object: ", predictObject);
-          //console.log("Percent: ", predictRate);
           setObject(predictObject);
           setRate(predictRate);
-          //console.log("Left: ", bboxLeft);
-          //console.log("Top: ", bboxTop);
-          //console.log("Width: ", bboxWidth);
-          //console.log("Height: ", bboxHeight); 
         }
       }
       setTimeout(() => predictMe(), 500);
