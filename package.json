@@ -1,7 +1,7 @@
 {
   "name": "react_media_recorder",
   "homepage": "https://mobile44.github.io/react_media_recorder",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
