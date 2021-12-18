@@ -36,6 +36,7 @@ button:hover {
 }
 .screen{
   position: absolute;
+  background-color: transparent;
   top: 150px;
   z-index: 9999;
 }

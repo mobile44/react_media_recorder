@@ -50,16 +50,17 @@ function ObjectDetection(props) {
       setClick(1);
       let cnvs = document.getElementById("camCanvas");
       let ctx = cnvs.getContext("2d");
-      ctx.globalAlpha = 0.1;
-      ctx.fillStyle = "#FF0000";
-      ctx.clearRect(
-        0,
-        0,
-        webcamRef.current.video.videoWidth,
-        webcamRef.current.video.videoHeight
-      )
+      //ctx.globalAlpha = 0.5;
+      //ctx.clearRect(
+      //  0,
+      //  0,
+      //  webcamRef.current.video.videoWidth,
+      //  webcamRef.current.video.videoHeight
+      //)
+      ctx.clearRect(0, 0, 1920, 1080);
       if (predictions.length > 0) {
         //console.log(predictions);
+        
         for (let i = 0; i < predictions.length; i++) {
           let predictObject = predictions[i].class;
           let predictRate = Math.round(parseFloat(predictions[i].score) * 100);
@@ -68,7 +69,18 @@ function ObjectDetection(props) {
           let bboxWidth = predictions[i].bbox[2];
           let bboxHeight = predictions[i].bbox[3] - predictions[i].bbox[1];
           ctx.beginPath();
-          ctx.fillRect(bboxLeft, bboxTop, bboxWidth, bboxHeight);
+          ctx.font = "28px Arial";
+          ctx.fillStyle = "red";
+          ctx.fillText(
+            predictObject + ":" + predictRate + "%",
+            bboxLeft,
+            bboxTop
+          );
+          ctx.rect(bboxLeft, bboxTop, bboxWidth, bboxHeight);
+          ctx.strokeStyle = "#FF0000";
+          ctx.lineWidth = 3;
+          ctx.stroke();
+          //ctx.clearRect(0, 0, 1920, 1080);
           //console.log("Object: ", predictObject);
           //console.log("Percent: ", predictRate);
           setObject(predictObject);
